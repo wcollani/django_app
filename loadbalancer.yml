@@ -1,0 +1,9 @@
+---
+- hosts: loadbalancer
+  user: vagrant
+  sudo: yes
+  gather_facts: yes
+
+  roles:
+    - common
+    - loadbalancer
